@@ -20,15 +20,15 @@ public class PeliculasController {
     public String crear(Model model) {
         Pelicula pelicula = new Pelicula();
         model.addAttribute("pelicula", pelicula);
-        model.addAttribute("pelicula", new Pelicula());
+        model.addAttribute("titulo", "Nueva Pelicula");
         return "pelicula";
     }
 
-    @GetMapping("/pelicula")
+    @GetMapping("/pelicula/{id}")
     public String editar(@PathVariable(name = "id") Long id, Model model) {
         Pelicula pelicula = new Pelicula();
         model.addAttribute("pelicula", pelicula);
-        model.addAttribute("pelicula", new Pelicula());
+        model.addAttribute("tidulo", "Editar Pelicula");
         return "pelicula";
     }
 
