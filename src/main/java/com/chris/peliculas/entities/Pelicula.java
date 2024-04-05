@@ -23,7 +23,7 @@ public class Pelicula implements Serializable {
     @Column(name = "fecha_estreno")
     @Temporal(TemporalType.DATE)
     private String fechaEstreno;
-    
+
     private Genero genero;
     private List<Actor> protagonistas;
 }
