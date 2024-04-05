@@ -25,5 +25,5 @@ public class Pelicula implements Serializable {
     private String fechaEstreno;
 
     private Genero genero;
-    private List<Actor> protagonistas;
+    //private List<Actor> protagonistas;
 }
