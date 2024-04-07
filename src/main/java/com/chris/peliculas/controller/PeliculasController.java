@@ -16,13 +16,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-@RequiredArgsConstructor
+
 public class PeliculasController {
 
+    @Autowired
     private PeliculaService peliculaService;
 
+    @Autowired
     private GeneroService generoService;
 
+    @Autowired
     private ActorService actorService;
 
     @GetMapping("/pelicula")

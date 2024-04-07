@@ -23,6 +23,8 @@ public class Actor implements Serializable {
 
     private String nombre;
 
+    @Setter
+    @Getter
     @Column(name = "url_imagen")
     private String urlImagen;
 
