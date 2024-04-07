@@ -3,6 +3,7 @@ package com.chris.peliculas.entities;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.List;
@@ -22,8 +23,10 @@ public class Pelicula implements Serializable {
 
     @Column(name = "fecha_estreno")
     @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private String fechaEstreno;
 
+    @OneToOne
     private Genero genero;
     //private List<Actor> protagonistas;
 }
